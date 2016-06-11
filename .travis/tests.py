@@ -52,7 +52,7 @@ def process_each(softwares):
 
 for cpuarch in ['AMD64', 'x86']:
     print("--------(arch: %s)--------" % cpuarch)
-    for file in glob.glob('*.sls'):
+    for file in glob.glob('zeal.sls'):
         print("---( "+ file + " )---")
         with open(file, 'r') as stream:
             template = stream.read()
